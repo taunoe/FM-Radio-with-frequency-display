@@ -3,33 +3,42 @@ Simple FM Radio with a display that shows the frequency and audio aplifier.
 
 ## 1. Goal
 My goal was to make simple FM radio with a display that shows the frequency. And manual control over frequency and volume.
+![Radio](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/FM-Stereo-Radio-RDA5807M-Module-roboromania-Pinout.png)
 
 ## 2. Hardware
 You can use Arduino Uno or Nano:
+![Ardino](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/Ekraanipilt%202018-08-25%2020-30-15.png)
 
 ### 2.1 RDA5807
 The main component is RDA5807 Sinle-Chip FM Receiver Module. It's very tiny..So you need to build some kind adapter.
+![Image of Yaktocat](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/Ekraanipilt%202018-08-25%2020-06-38.png)
 
+![Pinout](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/FM-Stereo-Radio-RDA5807M-Module-roboromania-Pinout.png)
 Connect RDA5807 pin 1 (SDA) to Arduino A4 and pin 2 (SCL) to Arduino A5. Pin 5 to 3.3v and pin 6 to Ground. Pin 10 is antenna. 7 is left and 8 is right audio output. The antenna may be just a piece of wire.
 
 You can connect speaker directly to RDA5807:
+![Image of Yaktocat](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/Ekraanipilt%202018-08-25%2020-19-46.png)
 
 Or connect to amplifier.
 
 ### 2.2 Amplifier
 I used LM386 to make this simple mono audi amplifier:
+![LM386](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/Ekraanipilt%202018-08-25%2020-23-24.png)
 
 ### 2.3 Rotary Encoder
 We use the Rotary Encoder to determine whether we are turning down (left) or up (right) the frequency.
+![Rotary Encoder](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/Ekraanipilt%202018-08-25%2020-33-14.png)
 
 ### 2.4 7-segent LED Display
 It is easier and cheaper to buy readymade 7-segment LED module than to build it yourself.
+
 
 But it is more fun to make it yourself. Like I did. There is many diffrent coloure and sizes 7-segment LEDs and they may be diffrent. So first test how it works. We need Common Cathode 7-segment LEDs. Mine looks like this:
 
 I use MAX7219 IC to drive LEDs, but it does make a lot of electric noise. What can be heard from the speaker... Thay they that MAX7221 is better.
 
 Connect MAX7219 DIN (Data In, leg 1) to Arduino D12, LOAD to D10 and CLK to D11.
+![display](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/Ekraanipilt%202018-08-25%2020-37-34.png)
 
 ## 3. Software
 We use I2C protocol to communicate with RDA5807 Radio module:
