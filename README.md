@@ -11,9 +11,11 @@ You can use Arduino Uno or Nano:
 
 ### 2.1 RDA5807
 The main component is RDA5807 Sinle-Chip FM Receiver Module. It's very tiny..So you need to build some kind adapter.
+![Pinout](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/FM-Stereo-Radio-RDA5807M-Module-roboromania-Pinout.png)
+
 ![Image of Yaktocat](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/Ekraanipilt%202018-08-25%2020-06-38.png)
 
-![Pinout](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/FM-Stereo-Radio-RDA5807M-Module-roboromania-Pinout.png)
+
 Connect RDA5807 pin 1 (SDA) to Arduino A4 and pin 2 (SCL) to Arduino A5. Pin 5 to 3.3v and pin 6 to Ground. Pin 10 is antenna. 7 is left and 8 is right audio output. The antenna may be just a piece of wire.
 
 You can connect speaker directly to RDA5807:
