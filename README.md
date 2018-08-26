@@ -3,7 +3,7 @@ Simple FM Radio with a display that shows the frequency and audio aplifier.
 
 ## 1. Goal
 My goal was to make simple FM radio with a display that shows the frequency. And manual control over frequency and volume.
-![Radio](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/FM-Stereo-Radio-RDA5807M-Module-roboromania-Pinout.png)
+![Radio](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/IMG_5461.JPG)
 
 ## 2. Hardware
 You can use Arduino Uno or Nano:
