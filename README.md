@@ -1,13 +1,13 @@
 # FM-Radio-with-frequency-display
 Simple FM Radio with a display that shows the frequency and audio aplifier.
 
-#1. Goal
+###1. Goal
 My goal was to make simple FM radio with a display that shows the frequency. And manual control over frequency and volume.
 
-#2. Hardware
+###2. Hardware
 You can use Arduino Uno or Nano:
 
-##2.1 RDA5807
+###2.1 RDA5807
 The main component is RDA5807 Sinle-Chip FM Receiver Module. It's very tiny..So you need to build some kind adapter.
 
 Connect RDA5807 pin 1 (SDA) to Arduino A4 and pin 2 (SCL) to Arduino A5. Pin 5 to 3.3v and pin 6 to Ground. Pin 10 is antenna. 7 is left and 8 is right audio output. The antenna may be just a piece of wire.
