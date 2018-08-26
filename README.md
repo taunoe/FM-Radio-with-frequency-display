@@ -34,8 +34,10 @@ It is easier and cheaper to buy readymade 7-segment LED module than to build it 
 
 
 But it is more fun to make it yourself. Like I did. There is many diffrent coloure and sizes 7-segment LEDs and they may be diffrent. So first test how it works. We need Common Cathode 7-segment LEDs. Mine looks like this:
+![7-segment LED](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/IMG_20180825_204725.jpg)
 
 I use MAX7219 IC to drive LEDs, but it does make a lot of electric noise. What can be heard from the speaker... Thay they that MAX7221 is better.
+![Pinout](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/MAX7219_pinout.jpg)
 
 Connect MAX7219 DIN (Data In, leg 1) to Arduino D12, LOAD to D10 and CLK to D11.
 ![display](https://github.com/taunoe/FM-Radio-with-frequency-display/blob/master/images/Ekraanipilt%202018-08-25%2020-37-34.png)
