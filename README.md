@@ -232,3 +232,6 @@ Function to send data to MAX7219 7-segment LED display
 ## 4. Enclosure
 Use your fantasy.
 
+___
+
+Copyright 2021 Tauno Erik https://taunoerik.art
